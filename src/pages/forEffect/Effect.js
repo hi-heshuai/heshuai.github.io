@@ -1,0 +1,10 @@
+class Effect {
+  batch = () => {
+
+  }
+
+  effect = () => {
+    
+  }
+}
+

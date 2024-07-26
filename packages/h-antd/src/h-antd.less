@@ -1,0 +1,71 @@
+:root {
+  --color-red: red;
+  --fail-color: red;
+}
+
+.h-form-item {
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 12px;
+
+  &-content {
+    display: flex;
+    width: 100%;
+  }
+
+  &-label {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 32px;
+    min-height: 30px;
+    text-align: right;
+
+    label {
+      cursor: text;
+    }
+  }
+
+  &-value {
+    flex: 1;
+    line-height: 32px;
+
+    .ant-select {
+      width: 100%;
+    }
+  }
+
+  &-error {
+    font-size: 12px;
+  }
+
+  &-validate {
+    font-size: 12px;
+  }
+}
+
+.h-form-item-vertical {
+}
+
+.h-form-item-fail {
+  color: var(--fail-color);
+
+  .ant-input,
+  .ant-input-password,
+  .ant-select-selector,
+  .ant-picker {
+    border-color: var(--fail-color) !important;
+
+    &:hover {
+      border-color: var(--fail-color) !important;
+    }
+  }
+
+  .ant-switch {
+    border: 1px solid var(--fail-color);
+  }
+}
+
+@import "./styles/array-table.less";
+@import "./styles/module.less";
